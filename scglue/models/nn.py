@@ -23,8 +23,9 @@ class GraphConv(torch.nn.Module):
     Graph convolution (propagation only)
     """
 
+    @staticmethod
     def forward(
-            self, input: torch.Tensor, eidx: torch.Tensor,
+            input: torch.Tensor, eidx: torch.Tensor,
             enorm: torch.Tensor, esgn: torch.Tensor
     ) -> torch.Tensor:
         r"""

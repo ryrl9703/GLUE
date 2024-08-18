@@ -27,11 +27,13 @@ class GraphEncoder(torch.nn.Module):
     r"""
     Abstract graph encoder
     """
+    def __init__(self):
+        super().__init__()
 
     @abstractmethod
     def forward(
             self, eidx: torch.Tensor, enorm: torch.Tensor, esgn: torch.Tensor
-    ) -> D.Distribution:
+    ) -> D.Distribution:  # 一个抽象方法，具体操作需要在子类中实现
         r"""
         Encode graph to vertex latent distribution
 
@@ -58,6 +60,8 @@ class GraphDecoder(torch.nn.Module):
     r"""
     Abstract graph decoder
     """
+    def __init__(self):
+        super().__init__()
 
     @abstractmethod
     def forward(
@@ -231,7 +235,7 @@ class GLUE(torch.nn.Module):
 
         self.device = autodevice()
 
-    @property
+    @property  # 可以让函数不佳括号直接调用
     def device(self) -> torch.device:
         r"""
         Device of the module

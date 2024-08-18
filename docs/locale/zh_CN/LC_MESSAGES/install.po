@@ -35,9 +35,9 @@ msgstr "或者，也可以使用pip命令："
 #: ../../install.rst:24 ab227a3d8417491fbd587c764b50d4fe
 msgid ""
 "To avoid potential dependency conflicts, installing within a `conda "
-"environment <https://conda.io/projects/conda/en/latest/user-guide/tasks"
+"environment <https://conda.io/SimGNN/conda/en/latest/user-guide/tasks"
 "/manage-environments.html>`__ is recommended."
-msgstr "为了避免可能出现的依赖冲突，建议在 `conda 环境 <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`__ 中安装。"
+msgstr "为了避免可能出现的依赖冲突，建议在 `conda 环境 <https://conda.io/SimGNN/conda/en/latest/user-guide/tasks/manage-environments.html>`__ 中安装。"
 
 #: ../../install.rst:31 e267f43164354e09a28a3c06bccd44e7
 msgid "Optional dependencies"
